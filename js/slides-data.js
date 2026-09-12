@@ -1,5 +1,5 @@
 /**
- * Antigravity Interactive Slides Data (24인치 대화면 풀스크린 & 라이브 실습 위젯 탑재 버전)
+ * Antigravity Interactive Slides Data (교과서 PDF 다운로드 및 A4 학습지 실습 1 탑재 버전)
  */
 
 var SLIDES_DATA = [
@@ -173,17 +173,17 @@ var SLIDES_DATA = [
   },
   {
     "id": 13,
-    "title": "실습 1: 3분 집중 타이머",
-    "badge": "⏱️ 실습 1단계",
-    "content": "\n      <div class=\"h-full flex flex-col justify-center w-full max-w-[96vw] 2xl:max-w-[1780px] mx-auto px-4\">\n        <div class=\"text-center mb-5\">\n          <span class=\"text-sky-400 font-black text-lg md:text-xl uppercase tracking-wider\">실습 1 : 가장 쉬운 입문 프로젝트</span>\n          <h2 class=\"text-4xl md:text-5xl lg:text-6xl font-black text-white mt-1 break-keep\">\n            \"모둠 활동용 3분 집중 타이머 만들기\"\n          </h2>\n          <p class=\"text-xl md:text-2xl text-slate-300 mt-1 font-bold break-keep\">우측의 [실제 작동하는 완성 예제]를 직접 눌러보고, 좌측 프롬프트로 만들어보세요!</p>\n        </div>\n\n        <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-3\">\n          <!-- Left: Prompt & Single File Guide -->\n          <div class=\"glass-card p-7 rounded-3xl border border-sky-500/40 flex flex-col justify-between\">\n            <div>\n              <div class=\"flex items-center justify-between mb-3\">\n                <h4 class=\"font-black text-sky-300 text-xl md:text-2xl flex items-center gap-2\">\n                  <i data-lucide=\"terminal\" class=\"w-6 h-6\"></i> 안티그래비티 대화창에 넣을 프롬프트\n                </h4>\n                <span class=\"text-xs px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 font-bold\">원클릭 복사 가능</span>\n              </div>\n              \n              <div class=\"bg-slate-950 p-5 rounded-2xl border border-slate-800 text-base md:text-lg font-mono text-slate-200 leading-relaxed break-keep mb-4\">\n                \"초등 수업용 3분 타이머 웹앱을 단일 index.html로 만들어줘.<br><br>\n                1. 1분, 3분, 5분 프리셋 버튼과 직접 시간 설정 기능<br>\n                2. 화면 중앙에 시원하게 큰 숫자 카운트다운<br>\n                3. 시작, 일시정지, 리셋 버튼<br>\n                4. 10초 전 주황색 경고 깜빡임과 알림음<br>\n                5. 종료 시 폭죽 애니메이션(Canvas Confetti)과 축하 소리<br>\n                6. 교실 빔프로젝터에 어울리는 다크 모드 글래스 UI\"\n              </div>\n\n              <!-- Single file guide pill -->\n              <div class=\"p-4 rounded-2xl bg-indigo-950/60 border border-indigo-500/30 text-sm md:text-base text-slate-200 space-y-1\">\n                <p class=\"font-bold text-indigo-300 flex items-center gap-2\">\n                  <i data-lucide=\"info\" class=\"w-4 h-4\"></i> 💡 <strong>[꿀팁] 왜 '단일 파일(index.html)'로 만드나요?</strong>\n                </p>\n                <p class=\"text-slate-300 text-sm break-keep\">\n                  CSS/JS 경로 에러 0%! 파일 1개만 카톡이나 메신저로 보내면 어디서나 더블클릭 즉시 실행됩니다.\n                </p>\n              </div>\n            </div>\n\n            <div class=\"mt-4 p-3 rounded-2xl bg-sky-950/40 text-center text-sm md:text-base font-bold text-sky-300\">\n              👉 대화창에 위 내용을 넣으면 15초 만에 우측과 같은 앱이 완성됩니다!\n            </div>\n          </div>\n\n          <!-- Right: LIVE WORKING TIMER APP DEMO WIDGET -->\n          <div class=\"glass-card p-7 rounded-3xl border-2 border-sky-400/60 bg-slate-950/90 flex flex-col justify-between shadow-2xl relative overflow-hidden\">\n            <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n              <div class=\"flex items-center gap-2\">\n                <span class=\"w-3.5 h-3.5 rounded-full bg-rose-500\"></span>\n                <span class=\"w-3.5 h-3.5 rounded-full bg-amber-500\"></span>\n                <span class=\"w-3.5 h-3.5 rounded-full bg-emerald-500\"></span>\n                <span class=\"text-sm font-mono text-slate-400 font-bold ml-2\">📱 완성 예제 실시간 체험 (Live Preview)</span>\n              </div>\n              <span id=\"demo-timer-status\" class=\"px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 text-xs font-bold font-mono\">준비 완료</span>\n            </div>\n\n            <!-- Timer Display -->\n            <div class=\"text-center my-auto py-4\">\n              <div class=\"inline-flex gap-2 mb-4\">\n                <button onclick=\"window.demoSetTimer(60)\" class=\"px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm md:text-base font-bold transition-all\">1분</button>\n                <button onclick=\"window.demoSetTimer(180)\" class=\"px-4 py-2 rounded-xl bg-sky-600/40 hover:bg-sky-600 text-sky-200 text-sm md:text-base font-bold transition-all\">3분</button>\n                <button onclick=\"window.demoSetTimer(300)\" class=\"px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm md:text-base font-bold transition-all\">5분</button>\n                <button onclick=\"window.demoSetTimer(10)\" class=\"px-4 py-2 rounded-xl bg-amber-500/30 hover:bg-amber-500 text-amber-200 text-sm md:text-base font-bold transition-all animate-pulse\">⚡ 10초 체험</button>\n              </div>\n\n              <!-- Huge Digital Clock -->\n              <div id=\"demo-timer-display\" class=\"text-6xl md:text-8xl font-black font-mono text-amber-300 tracking-wider my-2 drop-shadow-[0_0_25px_rgba(251,191,36,0.35)] transition-all\">\n                03:00\n              </div>\n\n              <p id=\"demo-timer-message\" class=\"text-slate-400 text-sm md:text-base font-medium mt-1\">모둠 토의 집중 시간입니다!</p>\n            </div>\n\n            <!-- Controls -->\n            <div class=\"grid grid-cols-3 gap-3 mt-4\">\n              <button id=\"demo-btn-start\" onclick=\"window.demoStartTimer()\" class=\"py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-lg md:text-xl shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-2\">\n                <i data-lucide=\"play\" class=\"w-6 h-6\"></i> 시작\n              </button>\n              <button onclick=\"window.demoPauseTimer()\" class=\"py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-lg md:text-xl transition-all flex items-center justify-center gap-2\">\n                <i data-lucide=\"pause\" class=\"w-6 h-6\"></i> 일시정지\n              </button>\n              <button onclick=\"window.demoResetTimer()\" class=\"py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-lg md:text-xl transition-all flex items-center justify-center gap-2\">\n                <i data-lucide=\"rotate-ccw\" class=\"w-6 h-6\"></i> 리셋\n              </button>\n            </div>\n          </div>\n        </div>\n      </div>\n    ",
+    "title": "실습 1: 교과서 PDF 기반 A4 스마트 학습지",
+    "badge": "📑 실습 1단계",
+    "content": "\n      <div class=\"h-full flex flex-col justify-center w-full max-w-[96vw] 2xl:max-w-[1780px] mx-auto px-4\">\n        <div class=\"text-center mb-3\">\n          <span class=\"text-amber-400 font-black text-lg md:text-xl uppercase tracking-wider\">실습 1 : 수업 자료 개발의 혁신</span>\n          <h2 class=\"text-3xl md:text-5xl lg:text-6xl font-black text-white mt-1 break-keep\">\n            \"교과서 PDF로 인터랙티브 A4 학습지 만들기\"\n          </h2>\n          <p class=\"text-lg md:text-2xl text-slate-300 mt-1 font-bold break-keep\">PDF 교과서(15~18쪽)를 넣고, 학생들이 웹에서 직접 타이핑하고 A4로 출력/PDF 저장하는 학습지 완성</p>\n        </div>\n\n        <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch mb-2\">\n          <!-- Left: Prompt Box & Attached PDF Download -->\n          <div class=\"glass-card p-6 md:p-7 rounded-3xl border border-amber-500/40 flex flex-col justify-between\">\n            <div>\n              <!-- Header with PDF Attachment Download Button -->\n              <div class=\"flex flex-wrap items-center justify-between mb-3 gap-2\">\n                <h4 class=\"font-black text-amber-300 text-xl md:text-2xl flex items-center gap-2\">\n                  <i data-lucide=\"terminal\" class=\"w-6 h-6\"></i> 학습지 생성 골든 프롬프트\n                </h4>\n                \n                <!-- Attached PDF Download Link -->\n                <a href=\"자료/society_6-2-1_pages15-18.pdf\" download=\"사회_6-2_15-18쪽_실습자료.pdf\" target=\"_blank\" class=\"px-3.5 py-1.5 rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs md:text-sm flex items-center gap-1.5 shadow-lg shadow-amber-500/30 transition-all transform hover:scale-105 active:scale-95\">\n                  <i data-lucide=\"download\" class=\"w-4 h-4\"></i>\n                  <span>📥 실습용 교과서 PDF(15~18쪽) 다운로드</span>\n                </a>\n              </div>\n\n              <!-- Textbook Extracted Summary & Golden Prompt -->\n              <div class=\"bg-slate-950 p-4 md:p-5 rounded-2xl border border-slate-800 text-xs md:text-sm lg:text-base font-mono text-slate-200 leading-relaxed break-keep mb-3\">\n                <div class=\"text-[11px] md:text-xs text-amber-400/90 font-sans font-bold mb-2 pb-1.5 border-b border-slate-800 flex items-center justify-between\">\n                  <span>📖 첨부 교과서 수록 내용 (사회 6-2 15~18쪽):</span>\n                  <span class=\"text-slate-400 font-normal\">산지 지형·바나우에·파미르·알프스·추키카마타·에베레스트</span>\n                </div>\n                \"첨부된 <span class='text-amber-300 font-bold'>초등 6학년 사회 교과서(15~18쪽) PDF</span>를 분석하여 학생용 인터랙티브 A4 학습지 웹앱을 단일 index.html로 만들어줘.<br><br>\n                1. <span class='text-amber-300 font-bold'>[학습지 구성]</span>: 15~16쪽 산지 지형 특징·3대 사례 매칭, 17쪽 광업/화산 표, 18쪽 에베레스트 빛과 그림자 토론<br>\n                2. <span class='text-sky-300 font-bold'>[인터랙티브 입력]</span>: 학번/이름 및 모든 답안란에 학생이 직접 타이핑 + localStorage 자동 저장<br>\n                3. <span class='text-emerald-300 font-bold'>[A4 인쇄 & PDF 저장]</span>: @media print로 A4 2페이지 분할 인쇄<br>\n                4. <span class='text-pink-300 font-bold'>[교사용 편의]</span>: [예시 답안 보기/숨기기] 토글 버튼 탑재\"\n              </div>\n\n              <div class=\"grid grid-cols-2 gap-3 text-xs md:text-sm text-slate-200\">\n                <div class=\"p-3 rounded-xl bg-slate-900/90 border border-slate-700\">\n                  <p class=\"font-bold text-amber-300 flex items-center gap-1.5\"><i data-lucide=\"file-check\" class=\"w-4 h-4\"></i> PDF 4쪽 정밀 추출</p>\n                  <p class=\"text-slate-300 text-xs mt-0.5\">상단 버튼으로 1.8MB 축소 PDF 즉시 다운로드</p>\n                </div>\n                <div class=\"p-3 rounded-xl bg-slate-900/90 border border-slate-700\">\n                  <p class=\"font-bold text-emerald-300 flex items-center gap-1.5\"><i data-lucide=\"printer\" class=\"w-4 h-4\"></i> A4 인쇄/PDF 저장</p>\n                  <p class=\"text-slate-300 text-xs mt-0.5\">웹에서 쓰고, 원클릭으로 A4 인쇄 및 PDF 저장</p>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"mt-3 p-2.5 rounded-2xl bg-amber-950/40 border border-amber-500/30 text-center text-xs md:text-sm font-bold text-amber-300\">\n              👉 우측의 [A4 학습지 체험]에서 직접 타이핑하고 [A4 인쇄 / PDF 저장]을 눌러보세요!\n            </div>\n          </div>\n\n          <!-- Right: LIVE WORKING A4 WORKSHEET DEMO WIDGET -->\n          <div class=\"glass-card p-5 md:p-6 rounded-3xl border-2 border-amber-400/60 bg-slate-950/95 flex flex-col justify-between shadow-2xl relative overflow-hidden\">\n            <!-- Header bar -->\n            <div class=\"flex flex-wrap items-center justify-between border-b border-slate-800 pb-3 mb-2 gap-2\">\n              <div class=\"flex items-center gap-2\">\n                <span class=\"w-3.5 h-3.5 rounded-full bg-rose-500 animate-pulse\"></span>\n                <span class=\"w-3.5 h-3.5 rounded-full bg-amber-500\"></span>\n                <span class=\"w-3.5 h-3.5 rounded-full bg-emerald-500\"></span>\n                <span class=\"text-sm md:text-base font-mono text-amber-300 font-extrabold ml-1\">📑 A4 스마트 학습지 (Live Demo)</span>\n              </div>\n              \n              <div class=\"flex items-center gap-2\">\n                <button onclick=\"window.demoFillWorksheetSample()\" class=\"px-2.5 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 text-xs font-bold border border-amber-500/40 transition-all flex items-center gap-1\">\n                  <i data-lucide=\"lightbulb\" class=\"w-3.5 h-3.5\"></i> 예시 답안 채우기\n                </button>\n                <a href=\"worksheet.html\" target=\"_blank\" class=\"px-2.5 py-1 rounded-lg bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-300 text-xs font-bold border border-indigo-500/40 transition-all flex items-center gap-1\">\n                  <i data-lucide=\"external-link\" class=\"w-3.5 h-3.5\"></i> 새 창 전체보기\n                </a>\n              </div>\n            </div>\n\n            <!-- Mini Interactive Worksheet Card -->\n            <div class=\"bg-white text-slate-900 p-4 rounded-2xl shadow-inner border border-slate-300 space-y-3 overflow-y-auto max-h-[380px] text-xs\">\n              <!-- Worksheet Header -->\n              <div class=\"border-b border-slate-300 pb-2 flex justify-between items-center\">\n                <div>\n                  <span class=\"text-[10px] font-black text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded border border-indigo-200\">초등 6-2 사회 1단원</span>\n                  <h5 class=\"text-sm font-black text-slate-900 mt-0.5\">세계의 산지 지형과 에베레스트의 빛과 그림자</h5>\n                </div>\n                <div class=\"flex items-center gap-1 text-[11px] font-bold\">\n                  <span>6학년</span>\n                  <input type=\"text\" id=\"demo-stu-class\" value=\"1\" class=\"w-6 text-center border-b border-slate-400 bg-transparent font-black text-indigo-700\">반\n                  <input type=\"text\" id=\"demo-stu-num\" value=\"7\" class=\"w-6 text-center border-b border-slate-400 bg-transparent font-black text-indigo-700\">번\n                  <input type=\"text\" id=\"demo-stu-name\" value=\"김민준\" class=\"w-14 text-center border-b border-slate-400 bg-transparent font-black text-indigo-700\">\n                </div>\n              </div>\n\n              <!-- Question 1: 산지 지형 특징 -->\n              <div>\n                <p class=\"font-extrabold text-slate-900 flex items-center gap-1\">\n                  <span class=\"w-4 h-4 rounded-full bg-indigo-600 text-white text-[10px] font-black flex items-center justify-center\">1</span>\n                  산지 지형 특징 빈칸 채우기 (15쪽)\n                </p>\n                <div class=\"p-2 bg-slate-50 rounded border border-slate-200 text-[11px] mt-1 leading-relaxed\">\n                  산지 지형은 <span class=\"font-bold text-indigo-700\">해발 고도</span>가 높고 대체로 경사가 <input type=\"text\" id=\"demo-ws-1\" placeholder=\"급\" class=\"w-10 text-center border-b border-slate-400 bg-white font-bold text-indigo-600\">합니다. 고원처럼 비교적 넓고 <input type=\"text\" id=\"demo-ws-2\" placeholder=\"평평\" class=\"w-12 text-center border-b border-slate-400 bg-white font-bold text-indigo-600\">한 곳도 있습니다.\n                </div>\n              </div>\n\n              <!-- Question 2: 3대 사례 매칭 -->\n              <div>\n                <p class=\"font-extrabold text-slate-900 flex items-center gap-1\">\n                  <span class=\"w-4 h-4 rounded-full bg-indigo-600 text-white text-[10px] font-black flex items-center justify-center\">2</span>\n                  산지 지형 이용 모습 (15~16쪽)\n                </p>\n                <div class=\"grid grid-cols-3 gap-2 mt-1 text-[10px]\">\n                  <div class=\"p-1.5 bg-emerald-50/70 border border-emerald-200 rounded\">\n                    <span class=\"font-bold text-emerald-800 block\">필리핀 바나우에</span>\n                    <input type=\"text\" id=\"demo-ws-3\" placeholder=\"계단식 논농사\" class=\"w-full bg-white border border-slate-300 rounded px-1 text-[10px] font-bold mt-1 text-slate-800\">\n                  </div>\n                  <div class=\"p-1.5 bg-amber-50/70 border border-amber-200 rounded\">\n                    <span class=\"font-bold text-amber-800 block\">타지키스탄 파미르</span>\n                    <input type=\"text\" id=\"demo-ws-4\" placeholder=\"양 목축·방목\" class=\"w-full bg-white border border-slate-300 rounded px-1 text-[10px] font-bold mt-1 text-slate-800\">\n                  </div>\n                  <div class=\"p-1.5 bg-sky-50/70 border border-sky-200 rounded\">\n                    <span class=\"font-bold text-sky-800 block\">스위스 알프스</span>\n                    <input type=\"text\" id=\"demo-ws-5\" placeholder=\"스키장·휴양림 관광\" class=\"w-full bg-white border border-slate-300 rounded px-1 text-[10px] font-bold mt-1 text-slate-800\">\n                  </div>\n                </div>\n              </div>\n\n              <!-- Question 3: 에베레스트 토론 -->\n              <div>\n                <p class=\"font-extrabold text-slate-900 flex items-center gap-1\">\n                  <span class=\"w-4 h-4 rounded-full bg-indigo-600 text-white text-[10px] font-black flex items-center justify-center\">3</span>\n                  [사회 속으로] 에베레스트산의 빛과 그림자 (18쪽)\n                </p>\n                <div class=\"grid grid-cols-2 gap-2 mt-1 text-[10px]\">\n                  <div class=\"p-1.5 bg-sky-50 border border-sky-200 rounded\">\n                    <span class=\"font-bold text-sky-800\">☀️ 빛 (경제적 수입)</span>\n                    <textarea id=\"demo-ws-6\" rows=\"2\" placeholder=\"셰르파 활동으로 짐 운반, 숙소·음식 제공으로 소득 창출\" class=\"w-full p-1 border border-slate-300 rounded bg-white text-[10px] mt-0.5 leading-snug\"></textarea>\n                  </div>\n                  <div class=\"p-1.5 bg-rose-50 border border-rose-200 rounded\">\n                    <span class=\"font-bold text-rose-800\">🌧️ 그림자 (환경 문제)</span>\n                    <textarea id=\"demo-ws-7\" rows=\"2\" placeholder=\"관광객이 버린 쓰레기 몸살, 입산료 징수 및 되가져오기 정책\" class=\"w-full p-1 border border-slate-300 rounded bg-white text-[10px] mt-0.5 leading-snug\"></textarea>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n            <!-- Actions Bar -->\n            <div class=\"mt-3 pt-2.5 border-t border-slate-800 flex gap-2.5\">\n              <button onclick=\"window.demoPrintWorksheet()\" class=\"flex-1 py-3.5 md:py-4 rounded-2xl bg-gradient-to-r from-amber-500 to-indigo-600 hover:from-amber-600 hover:to-indigo-700 text-white font-black text-base md:text-xl shadow-xl shadow-amber-500/30 transition-all transform active:scale-95 flex items-center justify-center gap-2\">\n                <i data-lucide=\"printer\" class=\"w-5 h-5 md:w-6 md:h-6\"></i> A4 인쇄 / PDF 저장 (체험)\n              </button>\n              <button onclick=\"window.demoResetWorksheet()\" class=\"px-5 py-3.5 md:py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-sm md:text-base transition-all\">\n                초기화\n              </button>\n            </div>\n          </div>\n        </div>\n      </div>\n",
     "agentInsights": {
-      "pm": "슬라이드 안에 실제 100% 작동하는 완성 타이머 앱을 임베드하여 연수생의 실습 성공 체감을 극대화했습니다.",
-      "content": "단일 파일의 이점과 10초 체험 타이머로 즉각적인 인터랙션을 제공합니다.",
-      "design": "타이머 숫자를 대화면에서 한눈에 보이도록 8xl 크기로 키웠습니다.",
-      "qa": "타이머 시작, 정지, 리셋, 폭죽 이벤트가 완벽히 동작합니다.",
-      "consultant": "선생님들이 실습 전에 완성품을 직접 만져볼 수 있어 실습 몰입도가 최고조에 달합니다."
+      "pm": "선생님들이 원클릭으로 실습할 수 있도록 교과서 PDF 15~18쪽 다운로드 링크와 추출 원고를 슬라이드 13에 전면 배치했습니다.",
+      "content": "6학년 2학기 사회 1단원(15~18쪽: 산지 지형과 에베레스트의 빛과 그림자) 원문을 기반으로 완벽한 실습 환경을 제공합니다.",
+      "design": "다운로드 버튼과 프롬프트, 인터랙티브 A4 위젯이 24인치 대화면에서 한눈에 조화롭게 배치되었습니다.",
+      "qa": "PDF 다운로드 링크와 A4 인쇄 새 창 연결이 로컬/웹 환경 모두에서 정상 작동합니다.",
+      "consultant": "연수 참여 교사들이 파일을 바로 내려받아 자기 컴퓨터에서 똑같이 만들어볼 수 있는 최고의 실습 장치입니다."
     },
-    "presenterNote": "\n      🎤 [강사용 추천 멘트]:\n      - \"선생님들! 화면 우측의 [⚡ 10초 체험] 버튼을 누르고 [시작]을 눌러보세요. 10초 뒤에 실제로 알림음과 함께 폭죽이 터집니다. 이 앱을 그대로 15초 만에 만들어보겠습니다!\"\n    "
+    "presenterNote": "\n      🎤 [강사용 추천 원고 & 시연 멘트]:\n      - \"선생님들! 우리가 학기 초나 수업 전에 늘 만드는 A4 학습지, 일일이 한글 파일에 타이핑하고 서식 맞추느라 고생 많으셨죠?\"\n      - \"화면 좌측 상단의 [📥 실습용 교과서 PDF(15~18쪽) 다운로드] 버튼을 눌러보세요. 1.8MB로 깔끔하게 추출된 실습용 교과서 PDF가 즉시 다운로드됩니다.\"\n      - \"이제 안티그래비티 대화창에 이 PDF 파일을 드래그해서 넣고, 아래의 [골든 프롬프트]를 그대로 복사해 붙여넣으면 어떻게 될까요?\"\n      - \"우측 화면처럼 학생이 크롬북이나 스마트폰으로 직접 답을 입력하고, [A4 인쇄 / PDF 저장] 버튼을 누르면 A4 규격에 딱 맞게 PDF로 뽑아내는 스마트 학습지가 30초 만에 뚝딱 완성됩니다!\"\n      - \"우측의 [예시 답안 채우기]와 [A4 인쇄 / PDF 저장] 버튼을 직접 눌러보세요. 웹과 종이 인쇄가 완벽하게 결합된 차세대 수업 자료를 체험하실 수 있습니다.\"\n"
   },
   {
     "id": 14,
@@ -256,140 +256,7 @@ var SLIDES_DATA = [
     "presenterNote": "\n      🎤 [강사용 추천 멘트]:\n      - \"선생님들, 슬라이드 발표 중에 글자를 직접 바꾸고 싶으실 때가 있죠? 하단 [✎ 고치기]를 누르면 이 화면의 어떤 글자든 마음대로 바꿀 수 있습니다. [T]를 누르면 강사용 꿀팁 서랍도 열립니다!\"\n    "
   }
 ];
-var TEACHER_NOTES = [
-  {
-    "slideId": 1,
-    "time": "3분",
-    "expectedAnswers": "전학공 연수에 대한 기대감 표출, 코딩에 대한 막연한 두려움 완화.",
-    "confusingPoints": "'코딩 전혀 몰라도 정말 되나요?' ➔ '네, 한글로 카톡 하듯이 대화만 하시면 됩니다!'",
-    "keyTerms": "안티그래비티, AI 에이전트, 교실 도메인 지식, 웹앱 배포"
-  },
-  {
-    "slideId": 2,
-    "time": "4분",
-    "expectedAnswers": "'맞아요, 파이썬이나 C언어 배우려다 세미콜론 때문에 포기했어요.'",
-    "confusingPoints": "'문법을 몰라도 오류가 안 나나요?' ➔ '오류 수정도 AI가 알아서 고칩니다.'",
-    "keyTerms": "패러다임 전환, 벽돌공(코더) vs 건축가(기획자), 에이전틱 개발"
-  },
-  {
-    "slideId": 3,
-    "time": "4분",
-    "expectedAnswers": "'개발자보다 교사가 교실 문제를 제일 잘 안다는 점에 공감합니다.'",
-    "confusingPoints": "'도메인 지식이 왜 기술보다 중요한가요?' ➔ '무엇을 만들지 결정하는 힘이기 때문입니다.'",
-    "keyTerms": "도메인 지식 (Domain Knowledge), 교실 눈높이, 현장 전문성"
-  },
-  {
-    "slideId": 4,
-    "time": "5분",
-    "expectedAnswers": "'불편한 점을 시스템으로 만든다는 말이 명쾌하네요.'",
-    "confusingPoints": "'엔지니어링이 거창한 기술인 줄 알았어요.' ➔ '문제 해결 절차를 세우는 사고방식입니다.'",
-    "keyTerms": "엔지니어링 사고, 문제 포착, 로직(규칙) 설계, 시스템 구축"
-  },
-  {
-    "slideId": 5,
-    "time": "5분",
-    "expectedAnswers": "'챗봇은 복사하기 귀찮았는데 에이전트는 알아서 실행해주니 신기해요.'",
-    "confusingPoints": "'챗봇과 에이전트의 결정적 차이는?' ➔ '말만 하는가 vs 실제 파일을 만들고 실행하는가'",
-    "keyTerms": "챗봇 vs 에이전트, 자율 실행, 멀티모달, 실시간 프리뷰"
-  },
-  {
-    "slideId": 6,
-    "time": "5분",
-    "expectedAnswers": "'학교 부서 협업처럼 AI도 팀으로 일한다는 개념이 재미있어요.'",
-    "confusingPoints": "'AI 혼자 다 하는 게 아니었나요?' ➔ '역할을 나눠 검수와 설계를 분리할 때 환각(오류)이 사라집니다.'",
-    "keyTerms": "멀티 에이전트, PM 오케스트레이터, 내용개발, 디자인, 검수(QA)"
-  },
-  {
-    "slideId": 7,
-    "time": "4분",
-    "expectedAnswers": "'화면이 생각보다 심플하고 채팅창 하나만 쓰면 되네요.'",
-    "confusingPoints": "'코딩 창을 만져야 하나요?' ➔ '아닙니다! 오직 왼쪽 대화창 하나만 쓰시면 됩니다.'",
-    "keyTerms": "대화창 (Chat), 계획/실행창 (Plan), 실시간 미리보기 (Preview)"
-  },
-  {
-    "slideId": 8,
-    "time": "5분",
-    "expectedAnswers": "'Skills는 업무 비법, MCP는 외부 도구 연결잭이라는 비유가 와닿아요.'",
-    "confusingPoints": "'MCP를 쓰면 학생 개인정보 위험은 없나요?' ➔ '선생님 컴퓨터 로컬에서 안전하게 연동됩니다.'",
-    "keyTerms": "Skills (업무 비법 매뉴얼), MCP (만능 연결잭), Google Sheets 연동"
-  },
-  {
-    "slideId": 9,
-    "time": "5분",
-    "expectedAnswers": "'역할, 상황, 기능, 디자인 4가지만 기억하면 되겠네요.'",
-    "confusingPoints": "'프롬프트를 길게 써야 하나요?' ➔ '길이보다 번호를 매겨 명확히 요구하는 것이 핵심입니다.'",
-    "keyTerms": "프롬프트 엔지니어링, 역할 부여, 맥락 정의, 제약 조건"
-  },
-  {
-    "slideId": 10,
-    "time": "5분",
-    "expectedAnswers": "'에러창 뜨면 무조건 복사해서 던지면 된다니 마음이 놓여요.'",
-    "confusingPoints": "'에러 영어를 몰라도 되나요?' ➔ '네! 에러 텍스트는 AI가 읽는 데이터입니다.'",
-    "keyTerms": "에러 해결 엔지니어링, 복사&붙여넣기 디버깅, 스크린샷 캡처 피드백"
-  },
-  {
-    "slideId": 11,
-    "time": "6분",
-    "expectedAnswers": "'클릭만으로 프롬프트가 뚝딱 만들어져서 바로 쓸 수 있겠어요.'",
-    "confusingPoints": "'옵션에 없는 앱은 어떻게 만드나요?' ➔ '텍스트창에 우리 반 상황을 직접 수정하시면 됩니다.'",
-    "keyTerms": "골든 프롬프트, 템플릿 조립, 원클릭 복사"
-  },
-  {
-    "slideId": 12,
-    "time": "4분",
-    "expectedAnswers": "'타이머, 퀴즈, 자리배치기 다 우리 반에 꼭 필요한 것들이에요.'",
-    "confusingPoints": "'만든 앱을 스마트폰에서도 쓸 수 있나요?' ➔ '네, 다음 배포 단계에서 링크로 만듭니다.'",
-    "keyTerms": "교실 맞춤형 웹앱 5선, 모둠 활동, 교과 퀴즈, 자리배치"
-  },
-  {
-    "slideId": 13,
-    "time": "10분",
-    "expectedAnswers": "'우측 완성 예제를 직접 눌러보니 10초 만에 폭죽이 터져서 너무 재미있어요!'",
-    "confusingPoints": "'전문 개발처럼 파일을 나눠야 하나요?' ➔ '교실용 간이 도구는 경로 에러가 없는 단일 파일이 훨씬 안전하며, 프로젝트가 커지면 분리합니다.'",
-    "keyTerms": "실습 1, 3분 집중 타이머, 라이브 예제, 단일 파일(index.html), Confetti 폭죽"
-  },
-  {
-    "slideId": 14,
-    "time": "10분",
-    "expectedAnswers": "'실제 김홍도 그림이 들어간 퀴즈를 풀어보니 아이들이 정말 좋아할 것 같아요!'",
-    "confusingPoints": "'저작권 있는 사진을 써도 되나요?' ➔ '학교 수업용은 공공누리, 위키미디어, 교과서 캡처 자료를 비영리 수업 목적으로 안전하게 활용할 수 있습니다.'",
-    "keyTerms": "실습 2, 한국사 사진 퀴즈 배틀, 라이브 퀴즈 예제, 멀티모달 이미지 삽입, 김홍도 씨름도"
-  },
-  {
-    "slideId": 15,
-    "time": "12분",
-    "expectedAnswers": "'자리 섞기 버튼을 누르니 3초 동안 돌다가 배치되는 게 실감나요!'",
-    "confusingPoints": "'학생 명단이 지워지면 어쩌죠?' ➔ '브라우저 localStorage에 안전하게 영구 저장됩니다.'",
-    "keyTerms": "실습 3, 스마트 자리배치기, 라이브 셔플 예제, 교실 규칙(로직), localStorage 저장"
-  },
-  {
-    "slideId": 16,
-    "time": "8분",
-    "expectedAnswers": "'스마트폰으로 QR 찍으니까 진짜 내가 만든 앱이 열려요!'",
-    "confusingPoints": "'배포 비용이 드나요?' ➔ 'GitHub과 Netlify는 완전 무료(0원)입니다.'",
-    "keyTerms": "GitHub, Netlify 무료 배포, QR 코드 공유, 모바일 웹앱"
-  },
-  {
-    "slideId": 17,
-    "time": "5분",
-    "expectedAnswers": "'대저중앙초 수업에 당장 활용해봐야겠어요. 자신감이 생겼습니다!'",
-    "confusingPoints": "'연수 끝나고 잊어버리면 어쩌죠?' ➔ '상단 PDF 저장 버튼으로 오늘 교재를 언제든 출력하세요.'",
-    "keyTerms": "기술은 AI에게, 교육적 가치는 교사에게, 에이전틱 수업 혁신"
-  },
-  {
-    "slideId": 18,
-    "time": "3분",
-    "expectedAnswers": "'슬라이드에서 글자도 바로 고칠 수 있고 교사용 팁도 볼 수 있어 편리해요.'",
-    "confusingPoints": "'고친 내용이 어디 저장되나요?' ➔ '선생님 컴퓨터 웹 브라우저(localStorage)에 안전하게 자동 저장됩니다.'",
-    "keyTerms": "고치기 모드 (contenteditable), 전체화면 (단축키 F), 교사용 서랍 (단축키 T)"
-  }
-];
 
 if (typeof window !== 'undefined') {
-  window.SLIDES_DATA = SLIDES_DATA;
-  window.TEACHER_NOTES = TEACHER_NOTES;
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { SLIDES_DATA, TEACHER_NOTES };
+  window.PRESENTATION_SLIDES = SLIDES_DATA;
 }
